@@ -1,0 +1,119 @@
+/* Cart Container */
+.cart-container {
+    margin-top: 150px;
+    /* Ensures the cart is positioned below the navbar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    /* Ensures footer stays at the bottom */
+    position: relative;
+}
+
+/* Cart Items List */
+.cart-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Cart Item */
+.cart-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Image */
+.cart-container li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Cart Item Details */
+.cart-container li div {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+/* Cart Item Name and Price */
+.cart-container li h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart-container li p {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+}
+
+/* Quantity Controls */
+.cart-container li div div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cart-container li div button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.cart-container li div span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Remove Button */
+.cart-container li div button:last-child {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Subtotal Section */
+.cart-container>div {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    /* Responsive Adjustments */
+    .cart-container li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-container li img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .cart-container li div {
+        margin-left: 0;
+    }
+}

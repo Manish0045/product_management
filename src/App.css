@@ -1,0 +1,31 @@
+/* Main Body */
+.mainBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  /* Adjusts for the height of the navbar */
+  padding-bottom: 50px;
+  /* Creates a gap above the footer */
+  min-height: calc(100vh - 150px);
+  /* Ensures footer stays at the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainBody {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: calc(100vh - 250px);
+  }
+}
+
+@media (max-width: 480px) {
+  .mainBody {
+    padding-top: 170px;
+    padding-bottom: 120px;
+    min-height: calc(100vh - 290px);
+  }
+}

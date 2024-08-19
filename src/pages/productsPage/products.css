@@ -1,0 +1,11 @@
+.products-grid {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 45px 10px;
+    padding: 20px;
+    justify-items: center;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 58px;
+}
